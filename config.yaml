@@ -5,3 +5,5 @@
   bot_name: '####'
   webserver: 'https://yourmachine.domain.com'
 
+- logging:
+  logfile: r'path/to/folder'
