@@ -20,3 +20,4 @@ WEBHOOK Telegram Configuration
 1. open your web browser
 2. type in address box "https://api.telegram.org/bot<bot_token>/setWebhook?url=<url_ngrok>&drop_pending_updates=True"
 Notes: Please use https://yourmachine.domain.com
+Note : you can skip this by using register_bot.bat (to start) or unregister_bot.bat (to stop) by config first in the config.yaml file
