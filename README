@@ -4,15 +4,17 @@ if you use another path please change the web.config and PATH according to your 
 Python Configuration
 1. Download and Install Python 3.6
 2. Check if the python has already in the windows PATH Global environment C:\Python36\ and C:\Python36\Scripts
-3. Install all requirement library, you can use install_lib.bat in the current directory
+3. Install all requirement library, you can use install_lib.bat in the current directory (Step 3 requires step 2)
 
 IIS and WSGI Configuration
 Follow this tutorial
 https://medium.com/@dpralay07/deploy-a-python-flask-application-in-iis-server-and-run-on-machine-ip-address-ddb81df8edf3#:~:text=To%20run%20a%20flask%20application,%E2%80%9Cpip%E2%80%9D%20command%20in%20CMD.&text=The%20Flask%20application%20connects%20with,expose%20the%20micro%2Dservice%20APIs.
 In summary, you have to set WFASTCGI Enable and IIS Configuration
-Notes: Do not add another website instead use the add Application so your bot_url will be like this https://yourmachine.domain.com/mybot/
-mybot is the the name of your bot, you can change it and in the main.py please change the bot name in @app.route('/mybot', methods=['POST'])
-
+Notes: 
+1. Do not add another website instead use the *Add Application* so your bot_url will be like this https://yourmachine.domain.com/mybot/
+  mybot is the the name of your bot, you can change it and please rewrite bot's name in the main.py @app.route('/<bot_name>', methods=['POST'])
+2. Please add IIS Worker to your Application Pool
+3. Please add IIS_USRS to your sharing permission folder if your script is not in inetpub 
 
 WEBHOOK Telegram Configuration
 1. open your web browser
