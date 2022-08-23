@@ -1,0 +1,9 @@
+NGROK Configuration
+1. open command prompt as adminstrator
+2. type "ngrok config add-authtoken <token>"
+3. type "ngrok http 5000"
+
+
+WEBHOOK Telegram Configuration
+1. open your web browser
+2. type in address box "https://api.telegram.org/bot<bot_token>/setWebhook?url=<url_ngrok>&drop_pending_updates=True"
