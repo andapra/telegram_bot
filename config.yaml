@@ -5,3 +5,6 @@
   webserver: '#####'
   bot_name: '#####'
 
+- logging:
+  logfile: r'path/to/folder'
+
