@@ -10,7 +10,7 @@ class get_message():
             incoming_msg = self.telegram_message['message']['text']
             person_reply = self.telegram_message['message']['from']['first_name']
         except:
-            incoming_msg = 'Tidak ada msg'
-            person_reply = 'Tidak ada reply'
+            incoming_msg = 'There is no message'
+            person_reply = 'There is no person/usernmae who reply'
         
         return chat_id, incoming_msg, person_reply

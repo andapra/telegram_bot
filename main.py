@@ -1,4 +1,3 @@
-import imp
 from flask import Flask, request, Response, Request
 from telegram import Bot, ParseMode, ext
 
