@@ -1,0 +1,5 @@
+# This is for api telegram bot [0]
+- bot: 
+  url: 'https://api.telegram.org/bot#####'
+  token: '#####'
+
