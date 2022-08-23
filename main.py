@@ -5,7 +5,7 @@ from get_json import jsonFile
 from parseMessage import get_message
 
 app = Flask(__name__)
-@app.route('/', methods=['POST'])
+@app.route('/mybot', methods=['POST'])
 def bot():
     if request.method == 'POST':
         msg = request.get_json()
