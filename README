@@ -12,7 +12,7 @@ https://medium.com/@dpralay07/deploy-a-python-flask-application-in-iis-server-an
 In summary, you have to set WFASTCGI Enable and IIS Configuration
 Notes: 
 1. Do not add another website instead use the *Add Application* so your bot_url will be like this https://yourmachine.domain.com/mybot/
-  mybot is the the name of your bot, you can change it and please rewrite bot's name in the main.py @app.route('/<bot_name>', methods=['POST'])
+  mybot is the the name of your bot, you can change it and please rewrite bot's name in the config.yaml
 2. Please add IIS Worker to your Application Pool
 3. Please add IIS_USRS to your sharing permission folder if your script is not in inetpub 
 
