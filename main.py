@@ -10,9 +10,12 @@ def bot():
     if request.method == 'POST':
         msg = request.get_json()
         chat_id, incoming_msg, person_reply = get_message.parse_json(msg)
-        jsonFile.output(msg, 'data.json')
+        data = jsonFile(msg, 'data.json')
+        data.output()
 
         messageUser = incoming_msg
+
+        return Response('ok', status=200)
     
     else:
         return Response('ok', status=200)
