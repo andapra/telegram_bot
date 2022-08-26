@@ -1,9 +1,9 @@
 # This is for api telegram bot [0]
 - bot: 
-  url: 'https://api.telegram.org/bot#####'
-  token: '#####'
-  bot_name: '####'
-  webserver: 'https://yourmachine.domain.com'
+  url: 'https://api.telegram.org/bot1491616275:AAEfhgmdgQpJSBdCraYNgKqeigsaGx3jf6c'
+  token: '1491616275:AAEfhgmdgQpJSBdCraYNgKqeigsaGx3jf6c'
+  bot_name: 'mybot'
+  webserver: 'https://22ae-103-154-125-178.ap.ngrok.io'
 
 - logging:
   logfile: r'path/to/folder'

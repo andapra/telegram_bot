@@ -1,12 +1,18 @@
 import yaml
 
 class request_paramater():
-    def __init__(self, no_index: int, name_dictionary: str):
-        self.no_index = no_index
-        self.name_dictionary =  name_dictionary
-
-    def get_parameter_yaml(self):
+    def __init__(self) -> None:
+        pass
+    
+    @staticmethod
+    def get_parameter_yaml(no_index, name_dictionary):
         with open('config.yaml', 'r') as configfile:
             configdata = yaml.load((configfile), Loader=yaml.FullLoader)
-            get_data = configdata[self.no_index]['{}'.format(self.name_dictionary)]
+            get_data = configdata[no_index]['{}'.format(name_dictionary)]
             return get_data
+    
+    # @property
+    # def get_index(self):
+    #     return self.__no_index
+
+    

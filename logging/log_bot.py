@@ -11,10 +11,10 @@ def logpath():
     return path_log_file
 
 class create_logtelegram():
-    def __init__(self, message) -> None:
-        self.message = message
+    def __init__(self) -> None:
+        pass
 
-    def debug(self):
+    def debug(message):
         date = datetime.today()
         time = datetime.strftime(date, '%Y-%m-%d')
 
@@ -34,9 +34,9 @@ class create_logtelegram():
         handler.setFormatter(format)
 
         main.addHandler(handler)
-        return main.debug(self.message)
+        return main.debug(message)
     
-    def info(self):
+    def info(message):
         date = datetime.today()
         time = datetime.strftime(date, '%Y-%m-%d')
 
@@ -56,9 +56,9 @@ class create_logtelegram():
         handler.setFormatter(format)
 
         main.addHandler(handler)
-        return main.info(self.message)
+        return main.info(message)
 
-    def warning(self):
+    def warning(message):
         date = datetime.today()
         time = datetime.strftime(date, '%Y-%m-%d')
 
@@ -78,9 +78,9 @@ class create_logtelegram():
         handler.setFormatter(format)
 
         main.addHandler(handler)
-        return main.warning(self.message)
+        return main.warning(message)
 
-    def error(self):
+    def error(message):
         date = datetime.today()
         time = datetime.strftime(date, '%Y-%m-%d')
 
@@ -100,9 +100,9 @@ class create_logtelegram():
         handler.setFormatter(format)
 
         main.addHandler(handler)
-        return main.warning(self.message)
+        return main.warning(message)
 
-    def critical(self):
+    def critical(message):
         date = datetime.today()
         time = datetime.strftime(date, '%Y-%m-%d')
 
@@ -122,4 +122,4 @@ class create_logtelegram():
         handler.setFormatter(format)
 
         main.addHandler(handler)
-        return main.critical(self.message)
+        return main.critical(message)
