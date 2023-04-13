@@ -4,6 +4,7 @@ class get_message():
     def __init__(self) -> None:
         pass
 
+    @staticmethod
     def parse_json(telegram_message):
         chat_id = telegram_message['message']['chat']['id']
         try:
